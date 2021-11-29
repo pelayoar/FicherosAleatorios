@@ -5,11 +5,13 @@
  */
 package ficherosaleatorios;
 
+import java.io.Serializable;
+
 /**
  *
  * @author a20pelayoar
  */
-public abstract class Piso {
+public abstract class Piso implements Serializable {
  
     String referencia;
     char tipoPiso;

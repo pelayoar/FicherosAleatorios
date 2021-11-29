@@ -5,11 +5,13 @@
  */
 package ficherosaleatorios;
 
+import java.io.Serializable;
+
 /**
  *
  * @author a20pelayoar
  */
-public class Duplex extends Piso{
+public class Duplex extends Piso implements Serializable{
     
     float cuotaExtra;
 
@@ -20,5 +22,9 @@ public class Duplex extends Piso{
     }
     
     
+    @Override
+    public String toString(){
+        return "Referencia: " + this.referencia + "\nPropietario: " + this.nombrePropietario;
+    }
     
 }

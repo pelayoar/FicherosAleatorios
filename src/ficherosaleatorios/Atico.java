@@ -14,7 +14,6 @@ public class Atico extends Piso{
     float mTerraza;
     
     
-    
     public Atico(String referncia, String nombrePropietario, float cuotaFija, float agua,
             float calefa){
         this.referencia = super.referencia;
@@ -38,5 +37,10 @@ public class Atico extends Piso{
     }
     
     
+    @Override
+    public String toString(){
+        return "Referencia: " + this.referencia + "\nPropietario: " + this.nombrePropietario;
+    }
     
+
 }
